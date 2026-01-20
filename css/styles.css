@@ -7,18 +7,22 @@
    CSS Variables (Color Scheme)
    ========================= */
 :root {
-    --primary-color: #4d1979;      /* TCU Purple */
-    --secondary-color: #7c3aed;    /* Light Purple */
-    --accent-color: #ffd700;       /* Gold accent */
+    --primary-color: #325e97;      /* Dark blue */
+    --secondary-color: #6189be;    /* Light blue */
+    --accent-color: #fff09a;       /* Yellow accent */
     --text-color: #333;            /* Dark gray for text */
-    --text-secondary: #64748b;     /* Lighter gray for captions */
-    --bg-color: #f4f4f4;           /* Light background */
+    --text-secondary: #64748b;     /* Lighter blue for captions */
+    --bg-color: #fffdef;           /* Cream background */
     --white: #ffffff;
+    /* I selected these colors with the color wheel by clicking on the color icon. This made it easy to play around with as I had my preview window up too.
+ 
 }
 
 /* =========================
    Basic Reset & Typography
    ========================= */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +34,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -61,7 +65,7 @@ header p {
 }
 
 nav {
-    background-color: #3d1461;
+    background-color: #6189be;
     padding: 0.75rem;
     display: flex;              /* Make nav a flex container */
     justify-content: center;    /* Center the ul inside nav */
