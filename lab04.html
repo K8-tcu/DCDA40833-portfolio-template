@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization in Tableau Public | Kate Strauch</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lab02.html">Lab 2: AI Evaluation</a>
+            <a href="lab03.html" class="active">Lab 3: Visualization Critique</a>
+            <a href="lab04.html" class="active">Lab 4: Data Visualization in Tableau Public</a>
+            <!-- Add more lab links as the semester progresses -->
+        </nav>
+        <h1>Data Visualization in Tableau Public</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Graph</h2>
+            <figure>
+                
+                <div class='tableauPlaceholder' id='viz1770788248582' style='position: relative'><noscript><a href='#'><img alt='F1 Teams by Number of Points (2000-2025) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;F1&#47;F1TeamDataBook&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='F1TeamDataBook&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;F1&#47;F1TeamDataBook&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1770788248582');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+               
+                <figcaption>
+                    <strong>Title:</strong> F1 Teams by Number of Points (2000-2025)<br>
+        
+                    <strong>Source:</strong> </a> Kaggle </a>
+                   
+                </figcaption>
+            </figure>
+        </section>
+
+
+
+        <section>
+            <h2>Reflection & Analysis</h2>
+            
+            <h3>Data Preparation</h3>
+            <p>Uploading my data was simple. I sourced the data from Kaggle and downloaded it as a zip file. I then dragged it to my desktop and into Tableau. It opened in the Tableau app just fine, and I was able to get started organizing and playing around with the worksheet.</p>
+
+            <h3>Design Choices</h3>
+            <p>The data is “Formula 1 Races Data from 2000-2025”. I decided to visualize the data by plotting the number of points each team has earned over the set period. I then organized it in descending order from left to right. With this, you can see that the top three teams by points are Ferrari, RedBull, and Mercedes.</p>
+
+            <h3>Expected Patterns</h3>
+            <p>Based on my understanding of Formula 1 as a sport and the data in this graph, generally, the teams that have earned the most points are still competing today. This makes sense to me because teams that have successful years, gaining many points by the end of the season, have an easier time raising funds from investors. Formula 1 is one of the most expensive sports to operate, so these teams are lasting the test of time by finding success and relying on it to continue operating at such a high cost.</p>
+
+            <h3>Surprises/Outliers</h3>
+            <p>I was surprised to see six outliers of teams with zero points. This is not a traditional outlier that non-sport datasets might show, because it makes sense that some teams have to lose for others to win. It is also common in the sport for teams to be renamed and/or taken over by new investors or sponsors. For example, Virgin Racing, one of the teams with zero points, was acquired and renamed Marussia F1. Both Virgin Racing and Marussia F1 are listed on the sheet, but they are technically the same team.</p>
+            
+            <h3>Questions for Further Investigation</h3>
+            <p>I wonder if extending the year parameter with another dataset would better explain these teams with zero points. As teams change often, it’s possible some of the ones with zero points were very successful in previous years. This would mean the whole graph would change if I looked at the beginning of Formula 1. That would give a full picture, not just recent success.</p>
+
+            <h3>Tool Evaluation</h3>
+            <p>Tableau Public is a good tool for data visualization. I like that it’s easy to drag and drop data for a quick setup. It also makes graphing maps and filtering results easy. When coding a graph in Google Colab, it’s not as easy to immediately filter data, make adjustments, and see results. One limitation I’ve run into, however, is the difficulty of removing duplicate data. When first playing around with Tableau, I used a dataset that needed cleaning. In the worksheet for this dataset, the filters temporarily hid data that needed to be deleted. It wouldn’t edit the actual set. This meant I had to keep re-editing the data if it was taken out and brought back. This could also be user error, so I will keep playing around with it.</p>
+       
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Kate Strauch</p>
+    </footer>
+</body>
+</html>
