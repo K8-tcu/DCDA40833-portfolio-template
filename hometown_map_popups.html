@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3feeea533eb01777fd82dec93b29bab1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3feeea533eb01777fd82dec93b29bab1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3feeea533eb01777fd82dec93b29bab1 = L.map(
+                "map_3feeea533eb01777fd82dec93b29bab1",
+                {
+                    center: [37.7909668, -122.4209964],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_01241045108dd90be331f2287e71a989 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/katestrauch/cmm86a95z000c01qr18i03nmc/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoia2F0ZXN0cmF1Y2giLCJhIjoiY21tODY2anJoMTBiYTJwb2oxMzJxM28ydiJ9.KzanJGTxXxyrGZpSEEv1jQ",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u00a9 Mapbox \u00a9 OpenStreetMap",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_01241045108dd90be331f2287e71a989.addTo(map_3feeea533eb01777fd82dec93b29bab1);
+        
+    
+            var feature_group_468b2a29bc0c92c2bfe215f6611f99f1 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_75cb40b3c5bec20d7fb66a7885b1888b = L.marker(
+                [37.831708, -122.480315],
+                {
+}
+            ).addTo(feature_group_468b2a29bc0c92c2bfe215f6611f99f1);
+        
+    
+            var icon_a29b837225bb4411311ae1d53d6386a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46255c9381f2048e881502f74407e38c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_113b5b5118263d788bd2c3ba0137345e = $(`<div id="html_113b5b5118263d788bd2c3ba0137345e" style="width: 100.0%; height: 100.0%;">     <div style="width: 280px;">       <h4 style="margin:0 0 6px 0;">Golden Gate Bridge</h4>       <div style="font-size: 13px; line-height: 1.3;">The most iconic landmark in San Francisco. Walking or biking across it gives you unreal views of the bay and instantly makes you feel like you’re in a movie</div>                <div style="margin-top:8px;">           <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/GoldenGateBridge-001.jpg" style="width: 100%; max-width: 260px; border-radius: 10px;" />         </div>              </div>     </div>`)[0];
+                popup_46255c9381f2048e881502f74407e38c.setContent(html_113b5b5118263d788bd2c3ba0137345e);
+            
+        
+
+        marker_75cb40b3c5bec20d7fb66a7885b1888b.bindPopup(popup_46255c9381f2048e881502f74407e38c)
+        ;
+
+        
+    
+    
+            marker_75cb40b3c5bec20d7fb66a7885b1888b.bindTooltip(
+                `<div>
+                     Golden Gate Bridge
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75cb40b3c5bec20d7fb66a7885b1888b.setIcon(icon_a29b837225bb4411311ae1d53d6386a7);
+            
+    
+            var marker_c01e81c856e91aa0a7166752c496c7a4 = L.marker(
+                [37.797861, -122.406742],
+                {
+}
+            ).addTo(feature_group_468b2a29bc0c92c2bfe215f6611f99f1);
+        
+    
+            var icon_b1ffc0493675d03fbb8307aa59cafefc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4d15cfd012bba73915fcf40514913ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cdf6f3b7fe7166b29e401e6d9c96b645 = $(`<div id="html_cdf6f3b7fe7166b29e401e6d9c96b645" style="width: 100.0%; height: 100.0%;">     <div style="width: 280px;">       <h4 style="margin:0 0 6px 0;">Alcatraz Island</h4>       <div style="font-size: 13px; line-height: 1.3;">The famous former federal prison in the middle of the bay. The ferry ride and audio tour make it such a memorable experience for anyone visiting</div>                <div style="margin-top:8px;">           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Alcatraz_Island_photo_D_Ramey_Logan.jpg" style="width: 100%; max-width: 260px; border-radius: 10px;" />         </div>              </div>     </div>`)[0];
+                popup_c4d15cfd012bba73915fcf40514913ca.setContent(html_cdf6f3b7fe7166b29e401e6d9c96b645);
+            
+        
+
+        marker_c01e81c856e91aa0a7166752c496c7a4.bindPopup(popup_c4d15cfd012bba73915fcf40514913ca)
+        ;
+
+        
+    
+    
+            marker_c01e81c856e91aa0a7166752c496c7a4.bindTooltip(
+                `<div>
+                     Alcatraz Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c01e81c856e91aa0a7166752c496c7a4.setIcon(icon_b1ffc0493675d03fbb8307aa59cafefc);
+            
+    
+            var marker_f789e63eed6f9a33cb1efdb24773aa30 = L.marker(
+                [37.771866, -122.454671],
+                {
+}
+            ).addTo(feature_group_468b2a29bc0c92c2bfe215f6611f99f1);
+        
+    
+            var icon_e318f7f9f76513bcea2d1231a1acbe00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0bb516180caf613ad45a9e1ca0b763c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39e78b78d17a685d494d7e12015c1e28 = $(`<div id="html_39e78b78d17a685d494d7e12015c1e28" style="width: 100.0%; height: 100.0%;">     <div style="width: 280px;">       <h4 style="margin:0 0 6px 0;">Golden Gate Park</h4>       <div style="font-size: 13px; line-height: 1.3;">A massive park filled with gardens, museums, and walking trails. It’s the perfect place to spend a relaxed afternoon exploring different parts of the city </div>                <div style="margin-top:8px;">           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Golden_Gate_Park_aerial.jpg" style="width: 100%; max-width: 260px; border-radius: 10px;" />         </div>              </div>     </div>`)[0];
+                popup_0bb516180caf613ad45a9e1ca0b763c2.setContent(html_39e78b78d17a685d494d7e12015c1e28);
+            
+        
+
+        marker_f789e63eed6f9a33cb1efdb24773aa30.bindPopup(popup_0bb516180caf613ad45a9e1ca0b763c2)
+        ;
+
+        
+    
+    
+            marker_f789e63eed6f9a33cb1efdb24773aa30.bindTooltip(
+                `<div>
+                     Golden Gate Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f789e63eed6f9a33cb1efdb24773aa30.setIcon(icon_e318f7f9f76513bcea2d1231a1acbe00);
+            
+    
+            var marker_0d5270e9008dd28069402f16b3808675 = L.marker(
+                [37.795122, -122.393187],
+                {
+}
+            ).addTo(feature_group_468b2a29bc0c92c2bfe215f6611f99f1);
+        
+    
+            var icon_71b2f62899029183cf26e46050678836 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shopping-bag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db6c8460c6f7ce6d94aeffd1abe998ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43dfe54db7cbf9ffc2b55012a7710a9d = $(`<div id="html_43dfe54db7cbf9ffc2b55012a7710a9d" style="width: 100.0%; height: 100.0%;">     <div style="width: 280px;">       <h4 style="margin:0 0 6px 0;">Ferry Building </h4>       <div style="font-size: 13px; line-height: 1.3;">A waterfront marketplace packed with local food vendors and artisan shops. The farmers market days are especially fun and showcase the best of local flavors</div>                <div style="margin-top:8px;">           <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/San_Francisco_Ferry_Building_%28cropped%29.jpg" style="width: 100%; max-width: 260px; border-radius: 10px;" />         </div>              </div>     </div>`)[0];
+                popup_db6c8460c6f7ce6d94aeffd1abe998ea.setContent(html_43dfe54db7cbf9ffc2b55012a7710a9d);
+            
+        
+
+        marker_0d5270e9008dd28069402f16b3808675.bindPopup(popup_db6c8460c6f7ce6d94aeffd1abe998ea)
+        ;
+
+        
+    
+    
+            marker_0d5270e9008dd28069402f16b3808675.bindTooltip(
+                `<div>
+                     Ferry Building 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0d5270e9008dd28069402f16b3808675.setIcon(icon_71b2f62899029183cf26e46050678836);
+            
+    
+            var marker_88e5cd758dbd2c7b0552f0a75faa8677 = L.marker(
+                [37.798393, -122.397077],
+                {
+}
+            ).addTo(feature_group_468b2a29bc0c92c2bfe215f6611f99f1);
+        
+    
+            var icon_8243f47d72c510b94489e4afa42f10ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shopping-bag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c178f00f03d13fed4494b008f06e6186 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c4254b108ec8e834a1fa73a136c75c3 = $(`<div id="html_0c4254b108ec8e834a1fa73a136c75c3" style="width: 100.0%; height: 100.0%;">     <div style="width: 280px;">       <h4 style="margin:0 0 6px 0;">Peir 39</h4>       <div style="font-size: 13px; line-height: 1.3;">A lively waterfront spot known for sea lions, shops, and bay views. It’s touristy but still such a classic first stop for visitors. </div>                <div style="margin-top:8px;">           <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Pier_39_San_Francisco.jpg" style="width: 100%; max-width: 260px; border-radius: 10px;" />         </div>              </div>     </div>`)[0];
+                popup_c178f00f03d13fed4494b008f06e6186.setContent(html_0c4254b108ec8e834a1fa73a136c75c3);
+            
+        
+
+        marker_88e5cd758dbd2c7b0552f0a75faa8677.bindPopup(popup_c178f00f03d13fed4494b008f06e6186)
+        ;
+
+        
+    
+    
+            marker_88e5cd758dbd2c7b0552f0a75faa8677.bindTooltip(
+                `<div>
+                     Peir 39
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_88e5cd758dbd2c7b0552f0a75faa8677.setIcon(icon_8243f47d72c510b94489e4afa42f10ad);
+            
+    
+            var marker_bcc54ceb6e5b8569fd5d01777a9b40f0 = L.marker(
+                [37.801318, -122.424929],
+                {
+}
+            ).addTo(feature_group_468b2a29bc0c92c2bfe215f6611f99f1);
+        
+    
+            var icon_68560eff3a09c83dfbbe0f76e81819aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4291c454395d2bbe42678f99ebaf3533 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0812d1bd3ec8e0a1c2ee19e9d2076d8d = $(`<div id="html_0812d1bd3ec8e0a1c2ee19e9d2076d8d" style="width: 100.0%; height: 100.0%;">     <div style="width: 280px;">       <h4 style="margin:0 0 6px 0;">Lombard Street</h4>       <div style="font-size: 13px; line-height: 1.3;">The famously crooked street with dramatic turns and flower-lined curves. Watching cars slowly wind down it is such a uniquely San Francisco experience. </div>                <div style="margin-top:8px;">           <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Lombard_Street_SF.jpg" style="width: 100%; max-width: 260px; border-radius: 10px;" />         </div>              </div>     </div>`)[0];
+                popup_4291c454395d2bbe42678f99ebaf3533.setContent(html_0812d1bd3ec8e0a1c2ee19e9d2076d8d);
+            
+        
+
+        marker_bcc54ceb6e5b8569fd5d01777a9b40f0.bindPopup(popup_4291c454395d2bbe42678f99ebaf3533)
+        ;
+
+        
+    
+    
+            marker_bcc54ceb6e5b8569fd5d01777a9b40f0.bindTooltip(
+                `<div>
+                     Lombard Street
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bcc54ceb6e5b8569fd5d01777a9b40f0.setIcon(icon_68560eff3a09c83dfbbe0f76e81819aa);
+            
+    
+            var marker_a46c244d0cef92582e163b02fba3b9f5 = L.marker(
+                [37.759823, -122.426011],
+                {
+}
+            ).addTo(feature_group_468b2a29bc0c92c2bfe215f6611f99f1);
+        
+    
+            var icon_93fbec689448d90a8ece1202fcb6c2d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b937601e23c9a10d0605a6186d1799dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9549a841ed92269d405fb89f0ee46464 = $(`<div id="html_9549a841ed92269d405fb89f0ee46464" style="width: 100.0%; height: 100.0%;">     <div style="width: 280px;">       <h4 style="margin:0 0 6px 0;">Mission Dolores Park</h4>       <div style="font-size: 13px; line-height: 1.3;">One of the best skyline views in the city. It’s always full of people relaxing, picnicking, and enjoying the sunshine when the weather is nice.</div>                <div style="margin-top:8px;">           <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Dolores_Park_view.jpg" style="width: 100%; max-width: 260px; border-radius: 10px;" />         </div>              </div>     </div>`)[0];
+                popup_b937601e23c9a10d0605a6186d1799dc.setContent(html_9549a841ed92269d405fb89f0ee46464);
+            
+        
+
+        marker_a46c244d0cef92582e163b02fba3b9f5.bindPopup(popup_b937601e23c9a10d0605a6186d1799dc)
+        ;
+
+        
+    
+    
+            marker_a46c244d0cef92582e163b02fba3b9f5.bindTooltip(
+                `<div>
+                     Mission Dolores Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a46c244d0cef92582e163b02fba3b9f5.setIcon(icon_93fbec689448d90a8ece1202fcb6c2d2);
+            
+    
+            var marker_77ea0d0e991da2b516e7169181484cbc = L.marker(
+                [37.79057, -122.405599],
+                {
+}
+            ).addTo(feature_group_468b2a29bc0c92c2bfe215f6611f99f1);
+        
+    
+            var icon_9ce77b2ac41fca9de89b7d87eb522557 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b9881a4369106143040a7e4d752fa48 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7929174c800ec7352717b5f4646eb2f2 = $(`<div id="html_7929174c800ec7352717b5f4646eb2f2" style="width: 100.0%; height: 100.0%;">     <div style="width: 280px;">       <h4 style="margin:0 0 6px 0;">Chinatown</h4>       <div style="font-size: 13px; line-height: 1.3;">The oldest Chinatown in North America and full of vibrant culture, food, and history. Walking through the Dragon Gate feels like stepping into a different world. </div>                <div style="margin-top:8px;">           <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Chinatown_San_Francisco.jpg" style="width: 100%; max-width: 260px; border-radius: 10px;" />         </div>              </div>     </div>`)[0];
+                popup_1b9881a4369106143040a7e4d752fa48.setContent(html_7929174c800ec7352717b5f4646eb2f2);
+            
+        
+
+        marker_77ea0d0e991da2b516e7169181484cbc.bindPopup(popup_1b9881a4369106143040a7e4d752fa48)
+        ;
+
+        
+    
+    
+            marker_77ea0d0e991da2b516e7169181484cbc.bindTooltip(
+                `<div>
+                     Chinatown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_77ea0d0e991da2b516e7169181484cbc.setIcon(icon_9ce77b2ac41fca9de89b7d87eb522557);
+            
+    
+            var marker_6445c470c494a04c30c1c9a14b9f8dde = L.marker(
+                [37.80161, -122.397394],
+                {
+}
+            ).addTo(feature_group_468b2a29bc0c92c2bfe215f6611f99f1);
+        
+    
+            var icon_c1cc626abaa80db8b01594e6300a63ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0f1a1ed6a7d1bb51e1c5405410d6e86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff40d8f3c49f53674059c40875f086f8 = $(`<div id="html_ff40d8f3c49f53674059c40875f086f8" style="width: 100.0%; height: 100.0%;">     <div style="width: 280px;">       <h4 style="margin:0 0 6px 0;">Exploratorium</h4>       <div style="font-size: 13px; line-height: 1.3;">An interactive science museum that’s fun for all ages. It’s hands-on and creative, making learning feel exciting instead of overwhelming. </div>                <div style="margin-top:8px;">           <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Exploratorium_exterior.jpg" style="width: 100%; max-width: 260px; border-radius: 10px;" />         </div>              </div>     </div>`)[0];
+                popup_f0f1a1ed6a7d1bb51e1c5405410d6e86.setContent(html_ff40d8f3c49f53674059c40875f086f8);
+            
+        
+
+        marker_6445c470c494a04c30c1c9a14b9f8dde.bindPopup(popup_f0f1a1ed6a7d1bb51e1c5405410d6e86)
+        ;
+
+        
+    
+    
+            marker_6445c470c494a04c30c1c9a14b9f8dde.bindTooltip(
+                `<div>
+                     Exploratorium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6445c470c494a04c30c1c9a14b9f8dde.setIcon(icon_c1cc626abaa80db8b01594e6300a63ab);
+            
+    
+            var marker_6ed9056772de08ef04d2aa7f82ef4e25 = L.marker(
+                [37.761397, -122.424039],
+                {
+}
+            ).addTo(feature_group_468b2a29bc0c92c2bfe215f6611f99f1);
+        
+    
+            var icon_aa4b566a4bc7faf91e9138a9d60731a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "utensils",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80aa87044bfc8e57eb490a03ba478f1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_736ffbf52cdc70ea9eed120cf43d2944 = $(`<div id="html_736ffbf52cdc70ea9eed120cf43d2944" style="width: 100.0%; height: 100.0%;">     <div style="width: 280px;">       <h4 style="margin:0 0 6px 0;">Tartine Bakery</h4>       <div style="font-size: 13px; line-height: 1.3;">A must-visit bakery in the Mission known for its fresh bread and pastries. It’s the kind of place where you grab coffee and sit outside to soak in the neighborhood vibe. </div>                <div style="margin-top:8px;">           <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Tartine_Bakery.jpg" style="width: 100%; max-width: 260px; border-radius: 10px;" />         </div>              </div>     </div>`)[0];
+                popup_80aa87044bfc8e57eb490a03ba478f1c.setContent(html_736ffbf52cdc70ea9eed120cf43d2944);
+            
+        
+
+        marker_6ed9056772de08ef04d2aa7f82ef4e25.bindPopup(popup_80aa87044bfc8e57eb490a03ba478f1c)
+        ;
+
+        
+    
+    
+            marker_6ed9056772de08ef04d2aa7f82ef4e25.bindTooltip(
+                `<div>
+                     Tartine Bakery
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ed9056772de08ef04d2aa7f82ef4e25.setIcon(icon_aa4b566a4bc7faf91e9138a9d60731a8);
+            
+    
+            feature_group_468b2a29bc0c92c2bfe215f6611f99f1.addTo(map_3feeea533eb01777fd82dec93b29bab1);
+        
+    
+            var feature_group_afe49631999a757675c93dc82f989643 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_afe49631999a757675c93dc82f989643.addTo(map_3feeea533eb01777fd82dec93b29bab1);
+        
+    
+            var feature_group_9642e245e18a6f208109d9080b05f778 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_9642e245e18a6f208109d9080b05f778.addTo(map_3feeea533eb01777fd82dec93b29bab1);
+        
+    
+            var feature_group_ee3e637f60b55a5d425943389c322fb8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_ee3e637f60b55a5d425943389c322fb8.addTo(map_3feeea533eb01777fd82dec93b29bab1);
+        
+    
+            var feature_group_99fc1b69ed708a1331b96b46207e3a12 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_99fc1b69ed708a1331b96b46207e3a12.addTo(map_3feeea533eb01777fd82dec93b29bab1);
+        
+    
+            var layer_control_a36de4ebb06c3e717e1bf099d96f1b22_layers = {
+                base_layers : {
+                    "Custom Mapbox Style" : tile_layer_01241045108dd90be331f2287e71a989,
+                },
+                overlays :  {
+                    "Historical" : feature_group_468b2a29bc0c92c2bfe215f6611f99f1,
+                    "Park" : feature_group_afe49631999a757675c93dc82f989643,
+                    "Shopping" : feature_group_9642e245e18a6f208109d9080b05f778,
+                    "Cultural" : feature_group_ee3e637f60b55a5d425943389c322fb8,
+                    "Restaurant" : feature_group_99fc1b69ed708a1331b96b46207e3a12,
+                },
+            };
+            let layer_control_a36de4ebb06c3e717e1bf099d96f1b22 = L.control.layers(
+                layer_control_a36de4ebb06c3e717e1bf099d96f1b22_layers.base_layers,
+                layer_control_a36de4ebb06c3e717e1bf099d96f1b22_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_3feeea533eb01777fd82dec93b29bab1);
+
+        
+</script>
+</html>
