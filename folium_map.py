@@ -24,7 +24,7 @@ control=True
 ).add_to(m)
 
 # ----- Save map -----
-m.save("hometown_map_popups.html")
+m.save("mapbox_folium_map.html")
 
-print("SacMap saved as hometown_map_popups.html")
+print("SacMap saved as mapbox_folium_map.html")
 print("HTML MAP SAVED")

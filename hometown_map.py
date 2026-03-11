@@ -12,7 +12,7 @@ print(df.head())
 # ============================
 # 1. ADD YOUR MAPBOX TOKEN
 # ============================
-access_token = "pk.eyJ1Ijoia2F0ZXN0cmF1Y2giLCJhIjoiY21tODY2anJoMTBiYTJwb2oxMzJxM28ydiJ9.KzanJGTxXxyrGZpSEEv1jQ"
+access_token = "pk.eyJ1Ijoia2F0ZXN0cmF1Y2giLCJhIjoiY21tOXpodTFqMDA4YzJvb3BsOG1rYjgzOCJ9.hMv3BPPOCzejkbFdNUaqcA"
 
 # ============================
 # 2. ADD YOUR MAPBOX STYLE INFO
